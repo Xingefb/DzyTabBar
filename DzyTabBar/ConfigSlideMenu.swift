@@ -22,6 +22,7 @@ class ConfigSlideMenu: NSObject {
         let left = story.instantiateViewController(withIdentifier: "LeftViewController")
         let nv1 = UINavigationController.init(rootViewController: left)
         
+        // 可以把 windows 的背景设置成图片 然后给一个缩放的比例 可以显示部分图片
         SlideMenuOptions.contentViewScale = 1
         SlideMenuOptions.leftViewWidth = 200
         
