@@ -24,6 +24,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNV-pF-EcH">
                                 <rect key="frame" x="172" y="318" width="30" height="30"/>
                                 <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="h79-we-ngv" eventType="touchUpInside" id="UVj-dz-67P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,6 +129,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJA-i3-Goo">
                                 <rect key="frame" x="172.5" y="318" width="30" height="30"/>
                                 <state key="normal" title="First"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="lL8-GG-ME4" eventType="touchUpInside" id="Gbe-ER-tuW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

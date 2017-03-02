@@ -8,14 +8,29 @@
 
 import UIKit
 
+protocol LeftViewControllerDelegate {
+    
+    func goToViewController(name : String)
+    
+}
+
 class LeftViewController: UIViewController {
 
+    var delegate:LeftViewControllerDelegate! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func clickButton(_ sender: UIButton) {
+
+        delegate.goToViewController(name: "first")
+        self.slideMenuController()?.closeLeft()
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

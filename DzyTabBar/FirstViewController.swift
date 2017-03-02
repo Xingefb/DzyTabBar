@@ -8,15 +8,27 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController,LeftViewControllerDelegate {
 
+    func goToViewController(name: String) {
+        print(name)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let story = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        let vc = story.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+        vc.delegate = self
         
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func clickButton(_ sender: UIButton) {
+        
+        self.slideMenuController()?.openLeft()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
