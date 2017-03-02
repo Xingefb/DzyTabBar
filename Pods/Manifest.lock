@@ -1,0 +1,15 @@
+PODS:
+  - RDVTabBarController (1.1.9)
+  - SlideMenuControllerSwift (3.0.1)
+
+DEPENDENCIES:
+  - RDVTabBarController
+  - SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
+
+PODFILE CHECKSUM: 21049c9cf5e86ef494f19a251b3e36ff24c98f46
+
+COCOAPODS: 1.2.0

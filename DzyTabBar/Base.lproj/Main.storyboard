@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Left View Controller-->
+        <scene sceneID="cD5-cg-x8p">
+            <objects>
+                <viewController storyboardIdentifier="LeftViewController" id="h79-we-ngv" customClass="LeftViewController" customModule="DzyTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTs-RR-dzd"/>
+                        <viewControllerLayoutGuide type="bottom" id="vAy-yc-t7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uMi-BY-lxc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNV-pF-EcH">
+                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <state key="normal" title="Left"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UNV-pF-EcH" firstAttribute="centerY" secondItem="uMi-BY-lxc" secondAttribute="centerY" id="0A7-vj-NtU"/>
+                            <constraint firstItem="UNV-pF-EcH" firstAttribute="centerX" secondItem="uMi-BY-lxc" secondAttribute="centerX" id="tTw-cv-CMe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GL7-Ib-mji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-1001"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="DzyTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="36"/>
+        </scene>
+        <!--Secound View Controller-->
+        <scene sceneID="aPx-mg-e3n">
+            <objects>
+                <viewController storyboardIdentifier="SecoundViewController" id="01o-R4-ELb" customClass="SecoundViewController" customModule="DzyTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J93-tW-jnk"/>
+                        <viewControllerLayoutGuide type="bottom" id="YDz-NS-k6U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tHX-sA-RLY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2t-Ks-Ryr">
+                                <rect key="frame" x="157" y="318.5" width="61" height="30"/>
+                                <state key="normal" title="Secound"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g2t-Ks-Ryr" firstAttribute="centerY" secondItem="tHX-sA-RLY" secondAttribute="centerY" id="Q6J-e9-Ufi"/>
+                            <constraint firstItem="g2t-Ks-Ryr" firstAttribute="centerX" secondItem="tHX-sA-RLY" secondAttribute="centerX" id="blo-7l-h4y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBf-t7-yLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="431"/>
+        </scene>
+        <!--Thired View Controller-->
+        <scene sceneID="Fac-D4-zjk">
+            <objects>
+                <viewController storyboardIdentifier="ThiredViewController" id="pTU-Jk-dB1" customClass="ThiredViewController" customModule="DzyTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L71-fo-r6Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="r3a-FL-2CR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j6r-ap-K8X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sx2-BP-NhE">
+                                <rect key="frame" x="165" y="318" width="44" height="30"/>
+                                <state key="normal" title="Thired"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sx2-BP-NhE" firstAttribute="centerX" secondItem="j6r-ap-K8X" secondAttribute="centerX" id="aZe-q0-VAT"/>
+                            <constraint firstItem="sx2-BP-NhE" firstAttribute="centerY" secondItem="j6r-ap-K8X" secondAttribute="centerY" id="sCJ-bg-Eul"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vks-cx-2g7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="1176"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="4Ds-v0-rlQ">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="lL8-GG-ME4" customClass="FirstViewController" customModule="DzyTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oKa-FB-THn"/>
+                        <viewControllerLayoutGuide type="bottom" id="hC2-cL-Qxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aD9-rF-BL9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJA-i3-Goo">
+                                <rect key="frame" x="172.5" y="318" width="30" height="30"/>
+                                <state key="normal" title="First"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EJA-i3-Goo" firstAttribute="centerX" secondItem="aD9-rF-BL9" secondAttribute="centerX" id="pA7-c6-QU6"/>
+                            <constraint firstItem="EJA-i3-Goo" firstAttribute="centerY" secondItem="aD9-rF-BL9" secondAttribute="centerY" id="wgh-qi-u7N"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EtJ-zM-l10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="-298"/>
+        </scene>
+    </scenes>
+</document>
