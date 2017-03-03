@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController,LeftViewControllerDelegate {
+class FirstViewController: UIViewController {
 
     func goToViewController(name: String) {
         print(name)
@@ -16,11 +16,7 @@ class FirstViewController: UIViewController,LeftViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let story = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        let vc = story.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
-        vc.delegate = self
-        
+                
         // Do any additional setup after loading the view.
     }
     

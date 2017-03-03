@@ -8,15 +8,8 @@
 
 import UIKit
 
-protocol LeftViewControllerDelegate {
-    
-    func goToViewController(name : String)
-    
-}
-
 class LeftViewController: UIViewController {
 
-    var delegate:LeftViewControllerDelegate! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +19,6 @@ class LeftViewController: UIViewController {
 
     @IBAction func clickButton(_ sender: UIButton) {
 
-        delegate.goToViewController(name: "first")
         self.slideMenuController()?.closeLeft()
 
     }
