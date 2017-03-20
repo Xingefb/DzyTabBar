@@ -18,13 +18,13 @@ class RootViewController: RDVTabBarController {
         let story = UIStoryboard.init(name: "Main", bundle: Bundle.main)
         
         let vc1 = story.instantiateViewController(withIdentifier: "FirstViewController")
-        let nv1 = UINavigationController.init(rootViewController: vc1)
+        let nv1 = UINavigationController(rootViewController: vc1)
         
         let vc2 = story.instantiateViewController(withIdentifier: "SecoundViewController")
-        let nv2 = UINavigationController.init(rootViewController: vc2)
+        let nv2 = UINavigationController(rootViewController: vc2)
         
         let vc3 = story.instantiateViewController(withIdentifier: "ThiredViewController")
-        let nv3 = UINavigationController.init(rootViewController: vc3)
+        let nv3 = UINavigationController(rootViewController: vc3)
         
         self.viewControllers = [nv1,nv2,nv3]
         self.selectedIndex = 0
@@ -49,10 +49,10 @@ class RootViewController: RDVTabBarController {
             theItem.titlePositionAdjustment = UIOffsetMake(0, 3);
             theItem.title = title[index]
             theItem.unselectedTitleAttributes = [NSForegroundColorAttributeName:UIColor.gray]
-            theItem.selectedTitleAttributes = [NSForegroundColorAttributeName:UIColor.green]
+            theItem.selectedTitleAttributes = [NSForegroundColorAttributeName:UIColor.orange]
             
-            let selecteImage = UIImage.init(named: selecteImages[index])
-            let unselecteImage = UIImage.init(named: unselecteImages[index])
+            let selecteImage = UIImage(named: selecteImages[index])
+            let unselecteImage = UIImage(named: unselecteImages[index])
             theItem.setFinishedSelectedImage(unselecteImage, withFinishedUnselectedImage: selecteImage)
             
             index += 1
